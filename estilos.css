@@ -8,6 +8,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e0e0e0;
 	color: #1d1d1d;
+	background:  linear-gradient(90deg,#de0a0a,rgb(197, 136, 129));
 }
 
 .contenedor {
@@ -22,6 +23,8 @@ body {
 
 .contenedor .bebida {
 	text-align: center;
+	background-color: #9c9965;
+border-radius: 10px;
 }
 
 .contenedor .bebida .titulo {
@@ -65,4 +68,15 @@ body {
 
 .paginacion button:hover {
 	background: #137c32;
+}
+
+#tituloS{
+color: red;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.alcohol{
+	background-color: #8fa4c1;
+	color: red;
+	border-radius: 10px;
 }

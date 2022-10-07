@@ -11,10 +11,18 @@ boton.addEventListener("click", function (evento) {
         let element = document.getElementById('contenedor');
         for (let i = 0; i < data.drinks.length; i++) {
             element.innerHTML +=`
-            <div class="pelicula">
-                <img class="poster"  src="${data.drinks.strDrinkThumb[i]}" alt="">
-                <h3 class="titulo">${data.drinks.strDrink[i]}</h3>
-            </div>
+            <div class="bebida">
+                <img class="poster"  src="${data.drinks[i].strDrinkThumb}" alt="">
+                <h3 id="titulo "class="titulo">${data.drinks[i].strDrink}</h3>
+                <h3 style="color: red;">"ingredientes "</h3>
+                <h5 class="titulo">${data.drinks[i].strInstructions}</h5>7
+                <div class="alcohol"> <p>${data.drinks[i].strAlcoholic}</p> </div>
+                <label for="cantidad" class="">cantidad</label>
+                <input type="number" class="form-control" id="cantidad" aria-describedby="name">
+                
+                <button id="comprar" type="button"><a href="compra.html" style="text-decoration: none;">comprar</a></button>
+                <br>
+            </div>  
         `;
         }
     })
